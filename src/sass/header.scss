@@ -1,0 +1,133 @@
+
+    header {
+    height: 79px;
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    &__logo {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        list-style-type: none;
+        padding-left: 20%;
+        padding-top: 22px;
+    }
+    &__search {
+        display: none;
+    }
+    &__cart {
+        display: none;
+    }
+    &__emptycart {
+        display: none;
+    }
+    .hidden {
+        display: none;
+    }
+    .dropdown {
+        list-style-type: none;
+        padding-top: 22px;
+        margin-right: 0;
+    }
+    #burger-icon {
+        cursor: pointer;
+    }
+    #navbar-links {
+        display: none;
+    }
+    #navbar-links.show {
+        display: block;
+    }
+}
+}
+
+@media  (min-width: 768px) {
+    header {
+        height: 89px;
+        .menu {
+            font-family: 'Open Sans Bold';
+            font-weight: 700;
+            display: flex;
+            flex-wrap: nowrap;
+            list-style-type: none;
+            padding-top: 32px;
+            padding-left: 0px;
+            font-size: 17px;
+            line-height: 24px;
+            width: 840px;
+            justify-content: space-around;
+            &__logo {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content:left;
+                list-style-type: none;
+                margin : -10px 0 0 52px;
+                padding: 0 0;
+            }
+            &__search {
+                display: flex;
+                border-left: 1px solid #444444;
+                margin-left: 242px;
+                padding-left: 32px;
+            }
+            &__cart {
+                display: flex;
+                border-left: 1px solid #444444;
+                margin-left: 12px;
+                padding-left: 32px;
+            }
+            &__emptycart {
+                display: flex;
+                margin-right: 102px;
+                font-family: 'Open Sans Bold';
+            }
+            .dropdown {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    header {
+        height: 89px;
+        .menu {
+            font-family: 'Open Sans Bold';
+            font-weight: 700;
+            display: flex;
+            flex-wrap: nowrap;
+            list-style-type: none;
+            padding-top: 32px;
+            font-size: 17px;
+            line-height: 24px;
+            width: 1150px;
+            justify-content: space-around;
+            &__logo {
+                margin-top: -20px;
+                margin-left: 0;
+            }
+            .hidden {
+                display: block;
+            }
+            &__catalog {
+                margin-left: 0px;
+            }
+            .dropdown {
+                display: none;
+            }
+            &__search {
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+            &__emptycart {
+                margin-right: 0;;
+            }
+        }
+    }
+}
+
+
+
+ 
